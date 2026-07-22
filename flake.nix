@@ -13,13 +13,14 @@
         inherit system;
       };
 
-      python = pkgs.python314Full;
+      python = pkgs.python314;
     in
     {
       devShells.${system}.default = pkgs.mkShell {
         packages = [
           python
           pkgs.thonny
+          pkgs.python314Packages.scipy
         ];
 
         shellHook = ''
