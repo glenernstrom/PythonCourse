@@ -18,10 +18,8 @@ def mean(x):
 
 
 def std_dev(x):
-
     i = 0
     total = []
-
     for __ in x:
         total.append((x[i] - mean(x)) ** 2)
         i = i + 1
@@ -45,13 +43,13 @@ if __name__ == "__main__":
 
     numstr_list = user_list[0:-1]
 
-    i = 0
+    index = 0
     numlist = []
 
     for num in numstr_list:
-        f = float(numstr_list[i])
+        f = float(numstr_list[index])
         numlist.append(f)
-        i = i + 1
+        index = index + 1
 
     print(
         f"The mean is {mean(numlist):.2f} and the "
