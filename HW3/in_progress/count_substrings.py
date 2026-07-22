@@ -3,10 +3,7 @@ Glen Ernstrom
 CS 1210
 July 22, 2026
 
-formatting reviewed and checked by
-running ruff (0.15.20) at the command line,
-reviewing any errors in vim, then running
-ruff format *.py prior to submission
+
 
 """
 # thought stream:
