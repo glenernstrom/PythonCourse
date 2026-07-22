@@ -2,6 +2,9 @@
 Glen Ernstrom
 CS 1210
 July 21, 2026
+
+code manually checked and formatted
+with the ruff linter
 """
 
 if __name__ == "__main__":

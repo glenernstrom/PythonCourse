@@ -2,6 +2,9 @@
 Glen Ernstrom
 CS 1210
 July 21, 2026
+
+code manually checked and formatted
+with the ruff linter
 """
 
 DATA = [11, 8, 19, 16, 3, 17, 6, 12, 16, 1, 14, 7, 12, 6, 2, 5, 16, 14, 16, 18]
