@@ -20,12 +20,13 @@ def mean(x):
 def std_dev(x):
 
     i = 0
-    total = 0
+    total = []
 
     for __ in x:
-        total = total + (x[i] - mean(x)) ** 2
+        total.append((x[i] - mean(x)) ** 2)
         i = i + 1
-    return math.sqrt(total)
+        sum(total)
+    return math.sqrt(sum(total) / len(x))
 
 
 if __name__ == "__main__":
