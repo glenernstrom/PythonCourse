@@ -97,7 +97,7 @@ frame_length = len(substring)
 # let me just say out loud: how many chunks equal to the frame size
 # can we get given the string length? there is no need to iterate
 # slicing more than than total number of possible frame-sized chunks
-
+  
 # maybe its just slicing in frame-sized lengths and stop the loop when
 # it hits an empty string in which case a while loop would suffice or
 # break out of the while loop if the slice is empty. 
