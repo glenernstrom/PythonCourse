@@ -13,8 +13,8 @@ ruff format *.py prior to submission
 
 def count_substrings(slices_, substring_):
     substring_count = 0
-    for i, e in enumerate(slices_):
-        if e == substring:
+    for e in (slices_):
+        if e == substring_:
             substring_count += 1
         else:
             substring_count += 0
@@ -29,14 +29,14 @@ if __name__ == "__main__":
     frame_length = len(substring)
 
     # initialize slice boundaries
-    start = 0
-    stop = frame_length
+    slice_start = 0
+    slice_stop = frame_length
 
     # create an iterable object determined by frame_length
     frames = [0]
-    for i in range(frame_length):
-        i += 1
-        frames.append(i)
+    for x in range(frame_length):
+        x += 1
+        frames.append(x)
 
     # print(frames) -> used for testing
 
@@ -46,14 +46,14 @@ if __name__ == "__main__":
 
     # the string slicer in all foward reading frames
     for incr in range(0, max(frames)):
-        start = 0 + incr  # start at reading frame 1
-        stop = frame_length + incr
+        slice_start = 0 + incr  # start at reading frame 1
+        slice_stop = frame_length + incr
         for num in range(string_length // frame_length):
-            element = string[start:stop]
+            element = string[slice_start:slice_stop]
             slices.append(element)
-            start += frame_length
-            stop += frame_length
-
+            slice_start += frame_length
+            slice_stop += frame_length
+            
     print(count_substrings(slices, substring))
      
 
